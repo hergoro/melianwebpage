@@ -1,0 +1,267 @@
+@media screen and (max-width: 991px){
+    .cielo, .cielo__contacto, .cielo__media, .cielo__discografia, .cielo__shows{
+      display: none;
+    }
+    h1 {
+      font-size: 5vw;
+      span {
+      margin-top: 1.4vh;
+      font-weight: 300;
+      color: #ffffffc4;
+      font-size: 2vw;
+      }
+    }
+  
+    .banda, .banda__section {
+      background-image: url(../img/fondocel.jpg);
+      background-size: cover;
+      height: 100%;
+    }
+  
+    .aside__album {
+      transform: scale(.9);
+      width: unset;
+      top: 70%;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .aside__album-cover{
+      position: relative;
+      margin-left: 62vw;
+    }
+  
+    .redes {
+      width: 36vw;
+      top: 6vh;
+      left: 7vw;
+      z-index: 1000;
+      padding: .5rem;
+    }
+  
+  
+    .redes1 {
+      display: flex;
+      color: #ffffffc4;
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+     li {
+       a
+        {
+        font-size: 30px;
+        letter-spacing: 2rem;
+        transition: color 0.2s linear 0s;
+         }
+        }
+    }
+    /* Estilos de menu hamburguesa */
+  
+    .menu-contenedor {
+     position: fixed;
+     top: 0;
+      right: 0;
+      z-index: 1;
+        .menu__check {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+  }
+    .hamburger {
+      position: absolute;
+      top: 0;
+     right: 0;
+     z-index: 1;
+     width: 50px;
+     height: 50px;
+     padding: 1rem;
+     background: var(--primary-color);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .hamburguesa{
+    box-sizing: unset;
+  }
+}
+  
+  /* Hamburger Lineas */
+    .menu-contenedor .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lineas - Top & Bottom */
+    .menu-contenedor .hamburger > div::before,
+    .menu-contenedor .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  /* Linea medio */
+    .menu-contenedor .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Animacion */
+    .menu-contenedor .menu__check:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Cambiar a X */
+    .menu-contenedor .menu__check:checked + .hamburger > div:before,
+    .menu-contenedor .menu__check:checked + .hamburger > div:after {
+      top: 0;
+     transform: rotate(90deg);
+     box-sizing: unset !important;
+
+  }
+  
+  /* Rotacion On Hover - Checked */
+    .menu-contenedor .menu__check:checked:hover + .hamburger > div {
+     transform: rotate(225deg);
+  }
+  
+  /* Mostrar Menu */
+    .menu-contenedor .menu__check:checked ~ .menu {
+      visibility: visible;
+  }
+  
+    .menu-contenedor .menu__check:checked ~ .menu > div {
+     transform: scale(1);
+     transition-duration: var(--menu-speed);
+  }
+  
+    .menu-contenedor .menu__check:checked ~ .menu > div > div {
+      opacity: 1;
+      transition:  opacity 0.4s ease 0.4s;
+  }
+  
+    .menu-contenedor .menu {
+     position: fixed;
+     top: 0;
+      left: 0;
+     width: 100%;
+     height: 100%;
+     visibility: hidden;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  
+    .menu-contenedor .menu > div {
+     background: rgba(77, 80, 87, 0.671);
+     border-radius: 50%;
+     width: 200vw;
+     height: 200vw;
+     display: flex;
+     flex: none;
+     align-items: center;
+     justify-content: center;
+     transform: scale(0);
+     transition: all 0.4s ease;
+  }
+  
+    .menu-contenedor .menu > div > div {
+      text-align: center;
+      max-width: 90vw;
+      max-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+  }
+  
+    .menu__lista{
+      left: 4vw;
+      top: 25vh;
+  }
+  
+    .menu-contenedor .menu > div > div > ul > li {
+     display: block;
+     list-style: none;
+     color: #fff;
+     font-size: 1.5rem;
+     padding: 1rem;
+     text-shadow: 0 0 20px rgb(255, 240, 189);
+  
+  }
+  
+    .menu-contenedor .menu > div > div > ul > li > a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.4s ease;
+      font-size: 5vw;
+  }
+
+.shows{
+  height: 70vh;
+  overflow: hidden;
+  background-image: url(../img/backshows.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: -5rem;
+  // padding: 4rem;
+
+  align-content: center;
+}
+  .fecha{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    ul{
+      font-size: .9rem;
+    }
+  }
+  .aboutDisco{
+    background-color: #12121273;
+  }
+
+  .up{
+    position: absolute;
+    transform: scale(.80);
+    margin: unset;
+    right: 2vw;
+
+  }
+
+  footer{
+    text-align: start;
+    justify-content: unset;
+  }
+
+  // #media__footer{
+  //   text-align: start;
+  //   justify-content: unset;
+  //   padding: 2rem;
+  //   margin-right: 0;
+  //   margin-left: 0;
+  //   box-sizing: unset;
+
+  // }
+
+ #up__media{
+  position: absolute;
+  right: -20vw;
+  }
+}

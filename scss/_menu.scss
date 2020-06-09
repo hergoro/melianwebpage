@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+  }
+  
+  .menu__lista {
+    position: absolute;
+    color: #ffffffc4;
+    right: 2vw;
+    top: 3vw;
+    z-index: 1000;
+    list-style: none;
+    letter-spacing: 0.2rem;
+    li{
+        display: inline-block;
+        margin-right: 1vw;
+        a{
+            color: darken($colorBlanco, 20%);
+            font-weight: 400;
+            font-size: 1.4vw;
+            font-style: none;
+            text-decoration: none;
+            &:a{
+              color: $colorBlanco;
+              text-shadow: 0 0 30px rgb(255, 240, 189);
+              font-weight: 700;
+            }
+        }
+    }
+  }
