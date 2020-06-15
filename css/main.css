@@ -655,7 +655,8 @@ textarea.form-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease; }
+    transition: all 0.4s ease;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75); }
   /* Hamburger Lineas - Top & Bottom */
   .menu-contenedor .hamburger > div::before,
   .menu-contenedor .hamburger > div::after {
@@ -665,7 +666,8 @@ textarea.form-text {
     top: -10px;
     width: 100%;
     height: 2px;
-    background: inherit; }
+    background: inherit;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75); }
   /* Linea medio */
   .menu-contenedor .hamburger > div::after {
     top: 10px; }
