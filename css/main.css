@@ -354,12 +354,13 @@ footer {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  transition: transform .2s ease-in-out; }
+  transition: transform .2s ease-in-out;
+  z-index: 20000; }
   .light-box img {
     width: 75vw;
     max-height: 70vh; }
@@ -370,10 +371,11 @@ footer {
 .close {
   display: block;
   position: absolute;
+  z-index: 20000;
   color: #fff;
-  top: 50px;
+  top: 100px;
   right: 50px;
-  font-size: 28px; }
+  font-size: 34px; }
 
 .next {
   display: block;
@@ -731,6 +733,8 @@ textarea.form-text {
     text-decoration: none;
     transition: color 0.4s ease;
     font-size: 5vw; }
+  .close i {
+    z-index: 10000; }
   .shows {
     height: 70vh;
     overflow: hidden;
