@@ -233,8 +233,30 @@
       font-size: .9rem;
     }
   }
+  .discografiaDisco4, .discografiaDisco3, .discografiaDisco2, .discografiaDisco1 {
+    width: 100vw;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .discoycd{
+    order: 1;
+    margin-bottom: 1rem;
+    img{
+    height: 27vh;
+    margin: 0 auto;
+    }
+  }
+
+  }
+
   .aboutDisco{
+    order: 2;
     background-color: #12121273;
+    transform: scale(.9);
   }
 
   .up{
@@ -250,18 +272,7 @@
     justify-content: unset;
   }
 
-  // #media__footer{
-  //   text-align: start;
-  //   justify-content: unset;
-  //   padding: 2rem;
-  //   margin-right: 0;
-  //   margin-left: 0;
-  //   box-sizing: unset;
-
-  // }
-
  #up__media{
   position: absolute;
   right: -20vw;
   }
-}

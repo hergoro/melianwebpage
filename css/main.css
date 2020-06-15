@@ -746,16 +746,35 @@ textarea.form-text {
     font-size: 1rem; }
     .fecha ul {
       font-size: .9rem; }
-  .aboutDisco {
-    background-color: #12121273; }
-  .up {
-    position: absolute;
-    transform: scale(0.8);
-    margin: unset;
-    right: 2vw; }
-  footer {
-    text-align: start;
-    justify-content: unset; }
-  #up__media {
-    position: absolute;
-    right: -20vw; } }
+  .discografiaDisco4, .discografiaDisco3, .discografiaDisco2, .discografiaDisco1 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .discoycd {
+    order: 1;
+    margin-bottom: 1rem; }
+    .discoycd img {
+      height: 27vh;
+      margin: 0 auto; } }
+
+.aboutDisco {
+  order: 2;
+  background-color: #12121273;
+  transform: scale(0.9); }
+
+.up {
+  position: absolute;
+  transform: scale(0.8);
+  margin: unset;
+  right: 2vw; }
+
+footer {
+  text-align: start;
+  justify-content: unset; }
+
+#up__media {
+  position: absolute;
+  right: -20vw; }

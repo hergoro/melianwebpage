@@ -20,26 +20,6 @@ $discos : (
       background-image: url($tapa);
     } 
 };
-
-// .discografiaDisco1{
-//     @include discoSection();
-//     background-image: url(../img/back1.jpg);
-//   }
-  
-//   .discografiaDisco2{
-//     @include discoSection();
-//     background-image: url(../img/back2.jpg);
-//   }
-  
-//   .discografiaDisco3{
-//     background-image: url(../img/back3.jpg);
-//     @include discoSection();
-//   }
-  
-//   .discografiaDisco4{
-//     background-image: url(../img/back4.jpg);
-//     @include discoSection();
-//   }
   
   .discoycd{
     margin: 0 auto;
