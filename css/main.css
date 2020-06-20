@@ -575,7 +575,11 @@ textarea.form-text {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0); } }
 
 @media screen and (max-width: 991px) {
-  .cielo, .cielo__contacto, .cielo__media, .cielo__discografia, .cielo__shows {
+  .cielo,
+  .cielo__contacto,
+  .cielo__media,
+  .cielo__discografia,
+  .cielo__shows {
     display: none; }
   h1 {
     font-size: 5vw; }
@@ -584,7 +588,8 @@ textarea.form-text {
       font-weight: 300;
       color: #ffffffc4;
       font-size: 2vw; }
-  .banda, .banda__section {
+  .banda,
+  .banda__section {
     background-image: url(../img/fondocel.jpg);
     background-size: cover;
     height: 100%; }
@@ -604,7 +609,7 @@ textarea.form-text {
     top: 6vh;
     left: 7vw;
     z-index: 1000;
-    padding: .5rem; }
+    padding: 0.5rem; }
   .redes1 {
     display: flex;
     color: #ffffffc4;
@@ -660,7 +665,7 @@ textarea.form-text {
   /* Hamburger Lineas - Top & Bottom */
   .menu-contenedor .hamburger > div::before,
   .menu-contenedor .hamburger > div::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: -10px;
@@ -751,8 +756,11 @@ textarea.form-text {
     margin-right: auto;
     font-size: 1rem; }
     .fecha ul {
-      font-size: .9rem; }
-  .discografiaDisco4, .discografiaDisco3, .discografiaDisco2, .discografiaDisco1 {
+      font-size: 0.9rem; }
+  .discografiaDisco4,
+  .discografiaDisco3,
+  .discografiaDisco2,
+  .discografiaDisco1 {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -784,3 +792,9 @@ footer {
 #up__media {
   position: absolute;
   right: -20vw; }
+
+@media screen and (min-width: 1300px) {
+  .banda {
+    background-position-y: -95vh; }
+  .banda__section {
+    background-position-y: -95vh; } }
