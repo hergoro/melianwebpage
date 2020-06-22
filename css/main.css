@@ -793,8 +793,14 @@ footer {
   position: absolute;
   right: -20vw; }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1366px) {
   .banda {
-    background-position-y: -98vh; }
+    background-position-y: -65vw; }
   .banda__section {
-    background-position-y: -105vh; } }
+    background-position-y: -65vw; } }
+
+@media screen and (min-width: 1920px) {
+  .banda {
+    background-position-y: -65vw; }
+  .banda__section {
+    background-position-y: -65vw; } }
