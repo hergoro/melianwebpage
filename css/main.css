@@ -359,7 +359,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   z-index: 20000; }
   .light-box img {
     width: 75vw;
@@ -385,6 +385,9 @@ footer {
   text-align: center;
   padding: 0 20px;
   font-size: 32px; }
+
+.img__grande {
+  display: none; }
 
 .discografiaDisco1 {
   display: grid;
@@ -797,7 +800,9 @@ footer {
   .banda {
     background-position-y: -65vw; }
   .banda__section {
-    background-position-y: -65vw; } }
+    background-position-y: -65vw; }
+  .img__grande {
+    display: unset; } }
 
 @media screen and (min-width: 1920px) {
   .banda {

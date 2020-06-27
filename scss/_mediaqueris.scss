@@ -295,6 +295,9 @@ footer {
   .banda__section {
     background-position-y: -65vw;
   }
+  .img__grande {
+    display: unset;
+  }
 }
 
 @media screen and (min-width: 1920px) {
