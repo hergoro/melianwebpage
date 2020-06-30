@@ -334,6 +334,9 @@ footer {
       font-size: 20px;
       transition: color 0.2s linear 0s; }
 
+#redes1 {
+  margin-bottom: 0; }
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -386,7 +389,12 @@ footer {
   padding: 0 20px;
   font-size: 32px; }
 
-.img__grande {
+.img__grandea,
+.img__grandeb,
+.img__grandec,
+.img__granded,
+.img__grandee,
+.img__grandef {
   display: none; }
 
 .discografiaDisco1 {
@@ -425,6 +433,9 @@ footer {
   align-content: center;
   background-image: url("../img/back4.jpg"); }
 
+.discografiaDisco4 {
+  background-position: top; }
+
 .discoycd {
   margin: 0 auto; }
 
@@ -437,11 +448,11 @@ footer {
   .aboutDisco h2 {
     font-weight: 500;
     font-size: 1.7rem;
-    letter-spacing: .15rem; }
+    letter-spacing: 0.15rem; }
   .aboutDisco h3 {
     font-weight: 300;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   .aboutDisco a img {
     margin-top: 1rem;
     height: 1.8rem; }
@@ -796,16 +807,46 @@ footer {
   position: absolute;
   right: -20vw; }
 
+@media screen and (min-width: 1024px) {
+  .img__grandea {
+    display: unset; } }
+
+@media screen and (min-width: 1280px) {
+  .img__grandea,
+  .img__grandeb,
+  .img__grandec,
+  .img__granded {
+    display: unset; } }
+
 @media screen and (min-width: 1366px) {
   .banda {
     background-position-y: -65vw; }
   .banda__section {
     background-position-y: -65vw; }
-  .img__grande {
+  .img__grandea,
+  .img__grandeb {
+    display: unset; } }
+
+@media screen and (min-width: 1440px) {
+  .img__grandec,
+  .img__granded {
+    display: none; } }
+
+@media screen and (min-width: 1680px) {
+  .img__grandeb,
+  .img__grandec,
+  .img__granded {
     display: unset; } }
 
 @media screen and (min-width: 1920px) {
   .banda {
     background-position-y: -65vw; }
   .banda__section {
-    background-position-y: -65vw; } }
+    background-position-y: -65vw; }
+  .img__grandea,
+  .img__grandeb,
+  .img__grandec,
+  .img__granded,
+  .img__grandee,
+  .img__grandef {
+    display: unset; } }

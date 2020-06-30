@@ -287,6 +287,21 @@ footer {
   right: -20vw;
 }
 
+@media screen and (min-width: 1024px) {
+  .img__grandea {
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img__grandea,
+  .img__grandeb,
+  .img__grandec,
+  .img__granded {
+    display: unset;
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .banda {
     background-position-y: -65vw;
@@ -295,7 +310,23 @@ footer {
   .banda__section {
     background-position-y: -65vw;
   }
-  .img__grande {
+  .img__grandea,
+  .img__grandeb {
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img__grandec,
+  .img__granded {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .img__grandeb,
+  .img__grandec,
+  .img__granded {
     display: unset;
   }
 }
@@ -307,5 +338,13 @@ footer {
 
   .banda__section {
     background-position-y: -65vw;
+  }
+  .img__grandea,
+  .img__grandeb,
+  .img__grandec,
+  .img__granded,
+  .img__grandee,
+  .img__grandef {
+    display: unset;
   }
 }

@@ -1,49 +1,51 @@
-.redesBar{
-    display: flex;
-    background-color: #141414fb;
-    top: 84.5vh;
-    left: 0px;
-    right: 0px;
-    height: 3.5rem;
-    align-items: center;
-    }
-  
-  .redes {
-    position: absolute;
-    display: flex;
-    color: $colorLinks;
-    width: 20%;
-    top: 4.5rem;
-    left: 4rem;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-    li{
-        list-style: none;
-        color: $colorLinks;
-        a{
-            color: $colorLinks;
-            font-size: 20px;
-            transition: color 0.2s linear 0s;
-        }
-    }
-  }
-  
-  .redes1 {
-    display: flex;
-    z-index: 1000;
-    align-items: center;
-    width: 100%;
-    justify-content: space-evenly;
-    li{
-        list-style: none;
-        color: $colorLinks;
-        a{
-            color: $colorLinks;
-            font-size: 20px;
-            transition: color 0.2s linear 0s;
-        }
-    }
+.redesBar {
+  display: flex;
+  background-color: #141414fb;
+  top: 84.5vh;
+  left: 0px;
+  right: 0px;
+  height: 3.5rem;
+  align-items: center;
+}
 
+.redes {
+  position: absolute;
+  display: flex;
+  color: $colorLinks;
+  width: 20%;
+  top: 4.5rem;
+  left: 4rem;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    list-style: none;
+    color: $colorLinks;
+    a {
+      color: $colorLinks;
+      font-size: 20px;
+      transition: color 0.2s linear 0s;
+    }
   }
-  
+}
+
+.redes1 {
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  li {
+    list-style: none;
+    color: $colorLinks;
+    a {
+      color: $colorLinks;
+      font-size: 20px;
+      transition: color 0.2s linear 0s;
+    }
+  }
+}
+
+#redes1 {
+  margin-bottom: 0;
+}

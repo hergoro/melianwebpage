@@ -1,51 +1,55 @@
 @mixin discoSection {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
-    align-content: center;    
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
 }
 
-$discos : (
-  "Disco1":"../img/back1.jpg",
-  "Disco2":"../img/back2.jpg",
-  "Disco3":"../img/back3.jpg",
-  "Disco4":"../img/back4.jpg"
+$discos: (
+  "Disco1": "../img/back1.jpg",
+  "Disco2": "../img/back2.jpg",
+  "Disco3": "../img/back3.jpg",
+  "Disco4": "../img/back4.jpg",
 );
 
 @each $nombre, $tapa in $discos {
-    .discografia#{$nombre}{
-      @include discoSection();
-      background-image: url($tapa);
-    } 
-};
-  
-  .discoycd{
-    margin: 0 auto;
-  }
-  
-  .discoycd img{
-    height: 18rem;
-  }
-  
-  .aboutDisco{
-    align-self: center;
-    color: #fff;
-  h2{
-    font-weight: 500;
-    font-size: 1.7rem;
-    letter-spacing: .15rem;
-  }
-  h3{
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-  }
-  a {
-    img{
-    margin-top: 1rem;
-    height: 1.8rem;
+  .discografia#{$nombre} {
+    @include discoSection();
+    background-image: url($tapa);
   }
 }
+
+.discografiaDisco4 {
+  background-position: top;
+}
+
+.discoycd {
+  margin: 0 auto;
+}
+
+.discoycd img {
+  height: 18rem;
+}
+
+.aboutDisco {
+  align-self: center;
+  color: #fff;
+  h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 0.15rem;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  a {
+    img {
+      margin-top: 1rem;
+      height: 1.8rem;
+    }
+  }
 }
